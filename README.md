@@ -131,6 +131,8 @@ lit-html
 
 Live Share
 
+Trailing Spaces
+
 Prettier - Code formatter
 ```
 
