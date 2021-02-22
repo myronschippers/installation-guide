@@ -152,3 +152,52 @@ Open up `settings.json` and add the following after loading the extension "**Pre
   "editor.detectIndentation": false
 }
 ```
+
+## Python Environment on Local MacOS
+
+**Referenced:**
+
+- [The right and wrong way to set Python 3 as default on a Mac](https://opensource.com/article/19/5/python-3-default-mac)
+- [pyenv auto installer](https://github.com/pyenv/pyenv-installer)
+
+According to [Moshe Zadka](https://opensource.com/users/moshez)...
+
+> "The basic premise of all Python development is to never use the system Python. You do not want the Mac OS X 'default Python' to be 'python3.' You want to never care about default Python."
+
+Should install and use Python for local development using [pyenv](https://github.com/pyenv/pyenv).
+
+In this I am using **Homebrew**. There are other ways but I like my **Homebrew**.
+
+### Step 1. Install pyenv
+
+```shell
+$ brew update
+```
+
+```shell
+$ brew install pyenv
+🍺  /usr/local/Cellar/pyenv/1.2.10: 634 files, 2.4MB
+```
+
+### Step 2. Install Python
+
+```shell
+$ pyenv install 3.7.3
+python-build: use openssl 1.0 from homebrew
+python-build: use readline from homebrew
+Downloading Python-3.7.3.tar.xz...
+-> https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
+Installing Python-3.7.3...
+## further output not included ##
+```
+
+### Step 3. Set your global default
+
+```
+$ pyenv global 3.7.3
+# and verify it worked
+$ pyenv version
+3.7.3 (set by /Users/mbbroberg/.pyenv/version)
+```
+
+
