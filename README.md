@@ -160,6 +160,13 @@ Open up `settings.json` and add the following after loading the extension "**Pre
 - [The right and wrong way to set Python 3 as default on a Mac](https://opensource.com/article/19/5/python-3-default-mac)
 - [pyenv auto installer](https://github.com/pyenv/pyenv-installer)
 
+**Installation ERRORs**
+
+- [Python Development on macOS with pyenv](https://medium.com/python-every-day/python-development-on-macos-with-pyenv-2509c694a808)
+- [How to set up Python environment on your Mac](https://levelup.gitconnected.com/how-to-set-up-python-environment-on-your-mac-560ebf9324ed)
+- [Install Issue Log 1643](https://github.com/pyenv/pyenv/issues/1643)
+- [Install Issue Log 1737](https://github.com/pyenv/pyenv/issues/1737)
+
 According to [Moshe Zadka](https://opensource.com/users/moshez)...
 
 > "The basic premise of all Python development is to never use the system Python. You do not want the Mac OS X 'default Python' to be 'python3.' You want to never care about default Python."
